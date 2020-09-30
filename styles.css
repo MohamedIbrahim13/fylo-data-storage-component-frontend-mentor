@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size:14px;
+	background-color: hsl(229, 57%, 11%);
+	padding: 0;
+	margin: 0;
+	min-width: 100%;
+	min-height: 100%;
+	
+	
+}
+
+.home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transform: translate(0,28%);
+
+}
+
+.row {
+	display: flex;
+	
+	align-items: flex-end;
+	justify-content: center;
+}
+.row-one {
+	z-index: 99;
+	height: 50vh;
+}
+
+.first-wrapper {
+
+	background-color: hsl(228, 56%, 26%);
+	padding: 15px 120px 30px 30px;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 75px;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+	margin-right: 25px;
+	
+}
+.icons {
+	display: flex;
+	justify-content: space-between;
+}
+.icons .image {
+	background-color: hsl(229, 57%, 11%);
+	border-radius: 8px;
+	width: 36px;
+	height: 36px;
+}
+.image img {
+	position: relative;
+	float: left;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.last-wrapper {
+	
+	background-color:hsl(228, 56%, 26%);
+	color: hsl(243, 100%, 93%);
+	padding: 25px 30px;
+	border-radius: 15px;
+}
+.row-two {
+	height: 50vh !important;
+	background-image: url('./images/bg-desktop.png');
+	width: 100vw;
+	
+	
+}
+.row-two img {
+	width: 100vw;
+}
+.bar {
+
+	height: 15px;
+	border-radius: 15px;
+	width: 400px;
+	background-color: hsl(229, 57%, 11%);
+	border: 2px solid hsl(229, 57%, 11%);
+}
+.progress {
+	height: 15px;
+	border-radius: 15px;
+	width: 290px;
+	background: linear-gradient(to right bottom ,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+	
+}
+.circle {
+	z-index: 199;
+	background-color: white;
+	height: 11px;
+	width: 11px;
+	border-radius: 50%;
+	float: right;
+	margin: 2px 0;
+}
+.tooltip{
+    position: relative;
+    
+	float: right;
+	background: white;
+    top: 0px;
+    transform: translateY(-100%);
+    margin-left: -140px;
+	width: 110px;
+	height: 40px;
+	border-radius: 10px;
+	border-bottom-right-radius: 0;
+    color: hsl(229, 57%, 11%);
+	padding:10px 14px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 25px;
+}
+
+.indicator {
+	border-width: 15px 0px 22.5px 15px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+   
+	margin-left: 10px;
+	position: absolute;
+    top: 59px;
+    z-index: 150;
+}
+.mute {
+	color:hsl(229, 7%, 55%);
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.limits {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+	
+}
+h5 {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+p span {
+	font-weight: 700;
+}
+
+
+@media screen and (max-width:375px){
+	*,*::before,*::after {
+		box-sizing: border-box;
+	}
+	body{
+		padding: 0;
+		margin: 0;
+		background-image: url('./images/bg-mobile.png');
+	}
+	
+	.home {
+		display: flex;
+		flex-direction: column;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		align-items: center;
+	}
+	
+	.row {
+		display: flex;
+		flex-direction: column;
+		padding-left: 25px;
+		padding-right: 25px;
+		align-items: center;
+		justify-content: center;
+		
+		
+	}
+	.first-wrapper {
+		width: 325px;
+		margin-right: 0;
+		margin-bottom: 25px;
+		
+	}
+	.icons {
+		display: flex;
+		justify-content: space-between;
+	}
+	.icons .image {
+		background-color: hsl(229, 57%, 11%);
+		border-radius: 10px;
+		width: 45px;
+		height: 45px;
+	}
+	.row-two {
+		background-image: none;
+	}
+	.last-wrapper{
+		width: 325px;
+		padding-bottom: 50px;
+	}
+	.last-wrapper p{
+		text-align: center;
+	}
+	.bar {
+		width: 265px;
+	}
+	.progress {
+		height: 11px;
+		border-radius: 11px;
+		width: 195px;
+		
+	}
+	.circle {
+		z-index: 199;
+		background-color: white;
+		height: 11px;
+		width: 11px;
+		border-radius: 50%;
+		float: right;
+		margin: 0;
+	}
+	.tooltip{
+		position: relative;
+		
+		transform: translate(-20%,155%);
+		font-size: 35px;
+		border-bottom-right-radius: 10px;
+		height: 60px;
+		width: 185px;
+		
+	}
+	.mute {
+		font-size: 14px;
+	}
+	.indicator {
+		display: none;
+	}
+	.limits {
+		width: 265px;
+		
+	}
+	h5 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
